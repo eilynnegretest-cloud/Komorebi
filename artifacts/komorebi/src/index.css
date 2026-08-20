@@ -137,12 +137,13 @@
 .wordmark {
   position: relative;
   display: flex;
-  width: min(42rem, 92vw);
-  height: clamp(15rem, 27vw, 20rem);
+  width: min(72rem, 112vw);
+  height: clamp(25rem, 48vw, 34rem);
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   filter: drop-shadow(0.06em 0.05em 0 rgba(72, 16, 46, 0.2));
+  transform: translateX(clamp(0.5rem, 2vw, 1.5rem));
 }
 
 .wordmark img {
@@ -174,7 +175,7 @@
   padding: 0.3rem;
   border: 1px solid rgba(245, 236, 210, 0.2);
   border-radius: 999px;
-  background: rgba(36, 154, 158, 0.84);
+  background: rgba(36, 154, 158, 0.64);
   box-shadow: 0 0.4rem 1.5rem rgba(49, 8, 34, 0.13);
   backdrop-filter: blur(12px);
 }
