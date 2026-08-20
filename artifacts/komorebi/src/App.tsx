@@ -85,15 +85,10 @@ function Home() {
   return (
     <main className="komorebi-page" data-testid="page-komorebi">
       <header className="site-header">
-        <a className="mini-mark" href="#inicio" aria-label="Komorebi, volver al inicio" data-testid="link-home">
-          <span className="mini-mark-symbol" aria-hidden="true">
-            <img src={komorebiLogo} alt="" />
-          </span>
-          <span>Komorebi</span>
-        </a>
         <nav className="nav-pill" aria-label="Navegación principal">
-          <a href="#sobre" data-testid="link-sobre">Sobre</a>
-          <a href="#camino" data-testid="link-camino">Camino</a>
+          <a href="#inicio" data-testid="link-home">Komorebi</a>
+          <a href="#sobre" data-testid="link-sobre">Sobre Komorebi</a>
+          <a href="#camino" data-testid="link-camino">Contenidos</a>
           <a href="#contacto" data-testid="link-contacto">Contacto</a>
         </nav>
       </header>
@@ -108,10 +103,9 @@ function Home() {
             El destello inicial de tu camino emprendedor
           </p>
           <a className="text-link reveal-delay-2" href="#sobre" data-testid="link-descubrir">
-            Descubre el espacio <ArrowDown aria-hidden="true" />
+            Ir a contenidos <ArrowDown aria-hidden="true" />
           </a>
         </div>
-        <div className="scroll-note" aria-hidden="true">baja despacio</div>
       </section>
 
       <section className="section" id="sobre" data-testid="section-sobre">
