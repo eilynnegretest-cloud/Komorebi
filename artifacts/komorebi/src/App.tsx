@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import komorebiLogo from '@assets/komorebilogoamarillobien_(1)_1787263880532.png';
 
 const queryClient = new QueryClient();
 
@@ -84,7 +85,12 @@ function Home() {
   return (
     <main className="komorebi-page" data-testid="page-komorebi">
       <header className="site-header">
-        <a className="mini-mark" href="#inicio" data-testid="link-home">Komorebi</a>
+        <a className="mini-mark" href="#inicio" aria-label="Komorebi, volver al inicio" data-testid="link-home">
+          <span className="mini-mark-symbol" aria-hidden="true">
+            <img src={komorebiLogo} alt="" />
+          </span>
+          <span>Komorebi</span>
+        </a>
         <nav className="nav-pill" aria-label="Navegación principal">
           <a href="#sobre" data-testid="link-sobre">Sobre</a>
           <a href="#camino" data-testid="link-camino">Camino</a>
@@ -94,10 +100,12 @@ function Home() {
 
       <section className="hero" id="inicio" data-testid="section-inicio">
         <div className="reveal">
-          <p className="hero-kicker">un espacio para lo que está por venir</p>
-          <h1 className="wordmark" data-testid="text-wordmark">Komorebi</h1>
+          <p className="hero-kicker">Bienvenida</p>
+          <div className="wordmark" role="img" aria-label="Komorebi" data-testid="text-wordmark">
+            <img src={komorebiLogo} alt="" />
+          </div>
           <p className="hero-copy reveal-delay">
-            Aprender, planificar y compartir el español desde un lugar más <em>humano.</em>
+            El destello inicial de tu camino emprendedor
           </p>
           <a className="text-link reveal-delay-2" href="#sobre" data-testid="link-descubrir">
             Descubre el espacio <ArrowDown aria-hidden="true" />
