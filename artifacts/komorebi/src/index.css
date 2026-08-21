@@ -91,15 +91,15 @@
 }
 
 :root {
-  --berry: #63123c;
-  --berry-deep: #48102e;
-  --magenta: #a81e56;
+  --berry: #4A1326;
+  --berry-deep: #6B1D38;
+  --magenta: #7E2243;
   --magenta-light: #bd2d64;
-  --teal: #4fa9a0;
-  --teal-dark: #2f817f;
-  --cream: #f5ecd2;
-  --cream-dim: #e4d7b9;
-  --gold: #e7c36b;
+  --teal: #249A9E;
+  --teal-dark: #249A9E;
+  --cream: #E6DEC9;
+  --cream-dim: #E6DEC9;
+  --gold: #D9A736;
 }
 
 .komorebi-page {
@@ -122,38 +122,39 @@
 }
 
 .site-header {
-  position: absolute;
-  z-index: 5;
-  top: 1.1rem;
+  position: fixed;
+  z-index: 100;
+  top: 1.5rem;
   left: 50%;
   display: flex;
   width: min(92vw, 1100px);
   align-items: center;
   justify-content: center;
   transform: translateX(-50%);
+  margin-bottom: 2.5rem;
 }
 
-/* The supplied logo is a tall mark; keep its full silhouette visible in the hero. */
 .wordmark {
   position: relative;
   display: flex;
-  width: min(72rem, 112vw);
-  height: clamp(22rem, 42vw, 30rem);
-  align-items: center;
   justify-content: center;
-  margin: -3.5rem auto -3rem;
-  filter: drop-shadow(0.06em 0.05em 0 rgba(72, 16, 46, 0.2));
-  transform: translateX(clamp(0.5rem, 2vw, 1.5rem));
+  align-items: center;
+  width: min(760px, 90vw);
+  height: clamp(240px, 30vw, 320px);
+  margin: 0 auto;
+  transform: translateX(clamp(2rem, 5vw, 4rem));
 }
 
 .wordmark img {
+  width: auto;
+  height: clamp(420px, 40vw, 560px);
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform: rotate(90deg) scale(1.75);
+  transform: rotate(90deg);
+  transform-box: fill-box;
+  transform-origin: center;
+  mix-blend-mode: screen;
+  opacity: 0.95;
 }
-
 .wordmark::after {
   position: absolute;
   right: -0.2em;
@@ -202,14 +203,16 @@
 .hero {
   position: relative;
   display: flex;
-  min-height: min(840px, 100dvh);
+  min-height: 70vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 7rem 1.4rem 4rem;
+  justify-content: flex-start;
+  padding-top: 7rem; 
+  padding-bottom: 2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
   text-align: center;
 }
-
 .hero::after {
   position: absolute;
   right: 8%;
@@ -221,46 +224,48 @@
   content: '';
   opacity: 0.6;
 }
+.hero .reveal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-.hero-kicker,
-.section-kicker {
-  margin: 0 0 1rem;
+.hero-kicker {
+  margin: 0 0 1rem 0; 
   color: var(--teal);
   font-family: var(--app-font-mono);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .hero-copy {
   max-width: 25rem;
-  margin: 0 auto;
+  margin: -1rem auto 4rem;
   color: var(--cream);
   font-family: var(--app-font-serif);
-  font-size: clamp(1.1rem, 2.3vw, 1.45rem);
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
   line-height: 1.3;
 }
-
 .hero-copy em { color: var(--gold); font-style: italic; }
 
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  margin-top: 2.2rem;
-  padding: 0.8rem 1.2rem;
+  margin-top: 0.2rem;
+  padding: 0.7rem 1.1rem;
   border: 1px solid var(--teal);
   border-radius: 999px;
   background: var(--teal);
-  color: var(--berry-deep);
+  color: var(--cream);
   font-family: var(--app-font-mono);
   font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
 }
-
 .text-link svg { width: 0.9rem; height: 0.9rem; transition: transform 180ms ease; }
 .text-link:hover, .text-link:focus-visible {
   background: transparent;
@@ -616,15 +621,16 @@
 
 @media (max-width: 680px) {
   .site-header { top: 0.75rem; width: calc(100% - 1rem); }
-  .nav-pill { gap: 0; }
-  .nav-pill { width: 100%; }
+  .nav-pill { gap: 0; width: 100%; }
   .nav-pill a { padding: 0.42rem 0.48rem; font-size: 0.46rem; }
-  .hero { min-height: 720px; padding-top: 6rem; }
+  .hero { min-height: 600px; padding-top: 5rem; }
   .wordmark {
-    height: 19rem;
-    margin: -2.5rem auto -2rem;
+    width: 100%;
+    height: 220px;
+    transform: translateX(1.5rem);
   }
-  .wordmark img { transform: rotate(90deg) scale(1.45); }
+  .wordmark img { transform: rotate(90deg); width: auto; height: 400px; }
+  .hero-copy { margin: -0.5rem auto 3rem; }
   .hero::after { right: -5rem; bottom: 4rem; width: 13rem; height: 13rem; }
   .section { width: calc(100% - 2.5rem); }
   .section-heading { display: block; margin-bottom: 2rem; }

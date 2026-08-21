@@ -7,6 +7,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import komorebiLogo from '@assets/komorebilogoamarillobien_(1)_1787263880532.png';
+import bambusImg from '@assets/Bambus_komorebi.jpg'
 
 const queryClient = new QueryClient();
 
