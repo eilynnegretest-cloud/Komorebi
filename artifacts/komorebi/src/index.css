@@ -376,25 +376,25 @@
 .footer-row a:hover { text-decoration: underline; }
 
 .section-fondo-1 {
-  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/src/assets/imagen feminista.jpg');
+  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/imagen feminista.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .section-fondo-2 {
-  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/src/assets/imagen hojas mesa.jpg');
+  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/imagen hojas mesa.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .section-fondo-3 {
-  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/src/assets/imagen mujer.jpg');
+  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/imagen mujer.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .section-fondo-4 {
-  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/src/assets/imagen trabajando.jpg');
+  background: linear-gradient(rgba(74, 19, 38, 0.88), rgba(74, 19, 38, 0.88)), url('/imagen trabajando.jpg');
   background-size: cover;
   background-position: center;
 }
