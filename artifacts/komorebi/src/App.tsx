@@ -18,11 +18,11 @@ import Aprende from "./Aprende";
 import Plantillas from "./Plantillas";
 import { Route, Switch, useLocation, Link, Router as WouterRouter } from "wouter";
 
-import bambusImg from "@assets/bambu komorebi.png";
-import imgFeminista from "@assets/imagen feminista.jpg";
-import imgHojasMesa from "@assets/imagen hojas mesa.jpg";
-import imgMujer from "@assets/imagen mujer.jpg";
-import imgTrabajando from "@assets/imagen trabajando.jpg";
+const bambusImg = "/bambu komorebi.png";
+const imgFeminista = "/imagen feminista.jpg";
+const imgHojasMesa = "/imagen hojas mesa.jpg";
+const imgMujer = "/imagen mujer.jpg";
+const imgTrabajando = "/imagen trabajando.jpg";
 
 const queryClient = new QueryClient();
 
@@ -143,7 +143,6 @@ function Home() {
         </nav>
       </header>
 
-     
       <section 
         className="hero" 
         id="inicio" 
@@ -191,7 +190,6 @@ function Home() {
         </div>
       </section>
 
-      
       <section 
         className="section" 
         id="sobre" 
@@ -222,7 +220,6 @@ function Home() {
         </div>
       </section>
 
-     
       <section 
         className="section process-section" 
         id="camino" 
@@ -415,7 +412,6 @@ function Home() {
         </div>
       </section>
 
-      
       <section 
         className="section contact-section" 
         id="contacto" 
@@ -469,7 +465,6 @@ function Home() {
         </div>
       </section>
 
-     
       {isDiscordModalOpen && (
         <div className="modal-overlay" onClick={() => setIsDiscordModalOpen(false)}>
           <div
@@ -490,7 +485,6 @@ function Home() {
               color: "#4A1326",
             }}
           >
-            
             <button
               onClick={() => setIsDiscordModalOpen(false)}
               style={{
@@ -507,7 +501,6 @@ function Home() {
               <X size={24} />
             </button>
 
-          
             <div
               style={{
                 backgroundColor: "#249A9E",
@@ -565,6 +558,7 @@ function Home() {
 }
 
 function Router() {
+  const baseUrl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL.replace(/\/$/, "") : "";
   return (
     <RoutedErrorBoundary>
       <Switch>
@@ -585,10 +579,11 @@ function RoutedErrorBoundary({ children }: { children: ReactNode }) {
 }
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL.replace(/\/$/, "") : "";
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <WouterRouter base={baseUrl}>
           <Router />
         </WouterRouter>
         <Toaster />

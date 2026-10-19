@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { ArrowLeft, Download, ExternalLink, Eye, X, FileText } from "lucide-react";
-
-
-import briefPdf from "@assets/Plantilla Brief de marca.pdf";
-import inventarioPdf from "@assets/Plantilla control inventario.pdf";
-import calendarioPdf from "@assets/Plantilla planificador calendario.pdf";
+import { ArrowLeft, Download, ExternalLink, FileText, X } from "lucide-react";
 
 function AdBanner() {
   return (
@@ -63,17 +58,17 @@ const templatesData: Template[] = [
   {
     id: 1,
     title: "Plantilla Brief de Marca",
-    pdfUrl: briefPdf,
+    pdfUrl: "/Plantilla Brief de marca.pdf",
   },
   {
     id: 2,
     title: "Plantilla Control de Inventario",
-    pdfUrl: inventarioPdf,
+    pdfUrl: "/Plantilla control inventario.pdf",
   },
   {
     id: 3,
     title: "Plantilla Planificador Calendario",
-    pdfUrl: calendarioPdf,
+    pdfUrl: "/Plantilla planificador calendario.pdf",
   },
 ];
 
@@ -212,7 +207,6 @@ export default function Plantillas() {
         }
       `}</style>
 
-      
       <header style={{ maxWidth: "1100px", margin: "0 auto", marginBottom: "2rem" }}>
         <Link
           href="/"
@@ -236,7 +230,6 @@ export default function Plantillas() {
         </Link>
       </header>
 
-      
       <div style={{ textAlign: "center", marginBottom: "5rem", marginTop: "1rem" }}>
         <h1
           style={{
@@ -264,7 +257,6 @@ export default function Plantillas() {
         </p>
       </div>
 
-      
       <div
         style={{
           maxWidth: "1100px",
@@ -283,22 +275,18 @@ export default function Plantillas() {
               onClick={() => setSelectedTemplate(tpl)}
               style={{ width: "100%", maxWidth: "310px" }}
             >
-             
               <div className="folder-paper">
                 <FileText size={24} color="#249A9E" />
               </div>
 
-              
               <div className="folder-body">
                 <div className="folder-inner-frame">
-                  
                   <div className="folder-dots">
                     <div className="folder-dot" />
                     <div className="folder-dot" />
                     <div className="folder-dot" />
                   </div>
 
-                 
                   <div
                     style={{
                       backgroundColor: "#E7C36B",
@@ -315,7 +303,6 @@ export default function Plantillas() {
                     <FileText size={26} color="#4A1326" />
                   </div>
 
-                  
                   <svg
                     className="folder-corner-leaf"
                     width="28"
@@ -334,7 +321,6 @@ export default function Plantillas() {
               </div>
             </div>
 
-           
             <span
               style={{
                 fontFamily: "var(--app-font-serif)",
@@ -352,7 +338,6 @@ export default function Plantillas() {
         ))}
       </div>
 
-     
       {selectedTemplate && (
         <div className="modal-overlay" onClick={() => setSelectedTemplate(null)}>
           <div
