@@ -148,7 +148,7 @@ function Home() {
         id="inicio" 
         data-testid="section-inicio"
         style={{
-          backgroundImage: `linear-gradient(rgba(50, 10, 25, 0.9), rgba(50, 10, 25, 1)), url(${imgFeminista})`,
+          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.75), rgba(74, 19, 38, 0.85)), url(${imgFeminista})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
@@ -195,7 +195,7 @@ function Home() {
         id="sobre" 
         data-testid="section-sobre"
         style={{
-          backgroundImage: `linear-gradient(rgba(50, 10, 25, 1), rgba(50, 10, 25, 0.9)), url(${imgHojasMesa})`,
+          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.85), rgba(74, 19, 38, 0.75)), url(${imgHojasMesa})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
@@ -225,7 +225,7 @@ function Home() {
         id="camino" 
         data-testid="section-camino"
         style={{
-          backgroundImage: `linear-gradient(rgba(50, 10, 25, 0.9), rgba(50, 10, 25, 1)), url(${imgMujer})`,
+          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.8), rgba(74, 19, 38, 0.9)), url(${imgMujer})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
@@ -417,7 +417,7 @@ function Home() {
         id="contacto" 
         data-testid="section-contacto"
         style={{
-          backgroundImage: `linear-gradient(rgba(50, 10, 25, 1), rgba(50, 10, 25, 0.9)), url(${imgTrabajando})`,
+          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.9), rgba(74, 19, 38, 0.8)), url(${imgTrabajando})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
@@ -593,3 +593,4 @@ function App() {
 }
 
 export default App;
+/*hola amiga*/
