@@ -148,7 +148,7 @@ function Home() {
         id="inicio" 
         data-testid="section-inicio"
         style={{
-          backgroundImage: `linear-gradient(rgba(107, 29, 56, 0.90), rgba(107, 29, 56, 0.96)), url(${imgFeminista})`,
+          backgroundImage: `linear-gradient(rgba(35, 8, 18, 0.92), rgba(60, 12, 28, 0.95)), url(${imgFeminista})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
