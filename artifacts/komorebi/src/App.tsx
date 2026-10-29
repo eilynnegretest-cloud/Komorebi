@@ -19,10 +19,10 @@ import Plantillas from "./Plantillas";
 import { Route, Switch, useLocation, Link, Router as WouterRouter } from "wouter";
 
 const bambusImg = "/bambu komorebi.png";
-const imgFeminista = "/imagen feminista.jpg";
-const imgHojasMesa = "/imagen hojas mesa.jpg";
-const imgMujer = "/imagen mujer.jpg";
-const imgTrabajando = "/imagen trabajando.jpg";
+const imgFeminista = "/imagen-feminista.jpg";
+const imgHojasMesa = "/imagen-hojas-mesa.jpg";
+const imgMujer = "/imagen-mujer.jpg";
+const imgTrabajando = "/imagen-trabajando.jpg";
 
 const queryClient = new QueryClient();
 
