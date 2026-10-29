@@ -195,7 +195,7 @@ function Home() {
         id="sobre" 
         data-testid="section-sobre"
         style={{
-          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.85), rgba(74, 19, 38, 0.75)), url(${imgHojasMesa})`,
+          backgroundImage: `linear-gradient(rgba(60, 12, 28, 0.95), rgba(35, 8, 18, 0.92)), url(${imgHojasMesa})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
@@ -225,7 +225,7 @@ function Home() {
         id="camino" 
         data-testid="section-camino"
         style={{
-          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.8), rgba(74, 19, 38, 0.9)), url(${imgMujer})`,
+          backgroundImage: `linear-gradient(rgba(35, 8, 18, 0.92), rgba(60, 12, 28, 0.95)), url(${imgMujer})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
@@ -417,7 +417,7 @@ function Home() {
         id="contacto" 
         data-testid="section-contacto"
         style={{
-          backgroundImage: `linear-gradient(rgba(74, 19, 38, 0.9), rgba(74, 19, 38, 0.8)), url(${imgTrabajando})`,
+          backgroundImage: `linear-gradient(rgba(60, 12, 28, 0.95), rgba(35, 8, 18, 0.92)), url(${imgTrabajando})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
